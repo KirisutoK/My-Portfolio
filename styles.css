@@ -1,5 +1,4 @@
 /*---------------------General Styles---------------------*/
-
 .backgroundimage {
   margin: 0;
   height: 100vh;
@@ -66,45 +65,37 @@ h1 {
 }
 
 /*---------------------General Styles---------------------*/
-
 /* --------------Scroll-Bar Styles------------ */
-
 /* width */
-.info-text.left > div > section::-webkit-scrollbar {
+.info-text.left>div>section::-webkit-scrollbar {
   width: 0px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: red;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #b30000;
 }
 
 /* --------------Scroll-Bar Styles------------ */
-
-
 /* --------------Info-Boxes Styles------------ */
-
 .info-boxes-container {
   display: flex;
   justify-content: center;
   background-color: transparent;
-
-  height: 75% ;
-  padding: 4.5%;
-  gap: 3%;
-
+  padding: 50px;
+  gap: 40px;
   transition: all 0.5s ease;
 }
 
@@ -112,54 +103,50 @@ h1 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-
-  padding: 1.5%;
+  padding: 20px;
   flex: 0 0 auto;
-
   background-color: rgba(68, 67, 67, 0.377);
   box-shadow: 0 0 20px 5px #1f2a30;
-  border-radius: 1.5%;
-
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
+
 .info-box:hover {
   box-shadow: 0 0 20px 5px #ffffff;
   transform: scale(1.02);
 }
 
 .info-box.center {
-  width: 90%;
-  height: 90%;
-  margin: 0px 1%;
+  width: 900px;
+  height: 380px;
+  margin: 0px 40px;
 }
 
 .info-box.left,
 .info-box.right {
   cursor: pointer;
   margin: 20px 40px;
-  width: 90%;
-  height: 90%;
+  width: 900px;
+  height: 380px;
   opacity: 0.5;
 }
 
 /* ------------------Info-Boxes Styles------------------ */
-
 /* -------------------Contents Styles------------------- */
-
-
 .info-box-top-section {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .ProfilePicture {
   border-radius: 5%;
   border: 5px transparent;
   box-shadow: 0 0 20px 5px #1f2a30;
-  margin: 0% 0% 0% 1%;
+  margin: 10px 20px;
+  padding-top: 0;
   object-fit: cover;
-  width: 20%;
-  height: 80%;
+  width: 200px;
+  height: 200px;
   transition: 0.3s ease;
 }
 
@@ -174,10 +161,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+
 .info-text h1 {
-  font-size: 400%;
+  font-size: 40px;
   margin: 0px 0px 5px 0px;
 }
+
 .info-text h2 {
   margin: 4px 0px;
   font-family: EB Garamond;
@@ -195,11 +184,13 @@ h1 {
   column-count: 2;
   column-gap: 5px;
 }
-.info-text.left > div {
-  text-align:center;
+
+.info-text.left>div {
+  text-align: center;
   width: 50%;
 }
-.info-text.left > div > section {
+
+.info-text.left>div>section {
   overflow-wrap: break-word;
   overflow-y: scroll;
   padding: 5px 5px;
@@ -208,11 +199,12 @@ h1 {
   box-shadow: 0px 1px 10px 0px #1f2a30 inset;
   border-radius: 10px;
 }
-.info-text.left > div > section p{
+
+.info-text.left>div>section p {
   font-size: 95%;
 }
 
-.info-text.left > div > section:hover {
+.info-text.left>div>section:hover {
   box-shadow: 0px 1px 10px 0px #ffffff inset;
 }
 
